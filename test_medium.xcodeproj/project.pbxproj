@@ -18,6 +18,7 @@
 		4A071CD5269CD3CE006C9B1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A071CD3269CD3CE006C9B1E /* LaunchScreen.storyboard */; };
 		4A071CE0269CD3CE006C9B1E /* ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A071CDF269CD3CE006C9B1E /* ExampleTests.swift */; };
 		4A071CEB269CD3CE006C9B1E /* ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A071CEA269CD3CE006C9B1E /* ExampleUITests.swift */; };
+		4A071CF7269CDD66006C9B1E /* SwiftyLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A071CF6269CDD66006C9B1E /* SwiftyLib.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		4A071CE6269CD3CE006C9B1E /* ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A071CEA269CD3CE006C9B1E /* ExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleUITests.swift; sourceTree = "<group>"; };
 		4A071CEC269CD3CE006C9B1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A071CF6269CDD66006C9B1E /* SwiftyLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyLib.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 			children = (
 				4A071CAB269CCF66006C9B1E /* test_medium.h */,
 				4A071CAC269CCF66006C9B1E /* Info.plist */,
+				4A071CF6269CDD66006C9B1E /* SwiftyLib.swift */,
 			);
 			path = test_medium;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 				TargetAttributes = {
 					4A071CA7269CCF66006C9B1E = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 					};
 					4A071CB0269CCF66006C9B1E = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -388,6 +392,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A071CF7269CDD66006C9B1E /* SwiftyLib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,6 +587,7 @@
 		4A071CBD269CCF66006C9B1E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = C7FTQ4PY23;
@@ -598,6 +604,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "camilolillo.test-medium";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -606,6 +613,7 @@
 		4A071CBE269CCF66006C9B1E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = C7FTQ4PY23;
@@ -630,6 +638,7 @@
 		4A071CC0269CCF66006C9B1E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C7FTQ4PY23;
 				INFOPLIST_FILE = test_mediumTests/Info.plist;
@@ -648,6 +657,7 @@
 		4A071CC1269CCF66006C9B1E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C7FTQ4PY23;
 				INFOPLIST_FILE = test_mediumTests/Info.plist;
